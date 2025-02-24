@@ -10,6 +10,8 @@ class OrdersPage extends StatefulWidget {
 class _OrdersPageState extends State<OrdersPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+    );
   }
 }

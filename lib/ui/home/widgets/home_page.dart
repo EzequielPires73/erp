@@ -1,4 +1,5 @@
 import 'package:erp/ui/_widgets/button.dart';
+import 'package:erp/ui/home/widgets/home_card.dart';
 import 'package:erp/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -65,58 +66,10 @@ class _HomePageState extends State<HomePage> {
                     spacing: 8,
                     children: [
                       Expanded(
-                        child: Card.outlined(
-                          margin: EdgeInsets.zero,
-                          color: Colors.blueAccent.withAlpha(30),
-                          shape: RoundedRectangleBorder(
-                            side: BorderSide(
-                              color: Colors.blueAccent,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Container(
-                            constraints: BoxConstraints(minWidth: 200),
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 16,
-                              children: [
-                                Icon(
-                                  Icons.library_add,
-                                  color: Colors.blueAccent,
-                                ),
-                                Text('Adicionar venda personalizada'),
-                              ],
-                            ),
-                          ),
-                        ),
+                        child: HomeCard(),
                       ),
                       Expanded(
-                        child: Card.outlined(
-                          margin: EdgeInsets.zero,
-                          color: Colors.blueAccent.withAlpha(30),
-                          shape: RoundedRectangleBorder(
-                            side: BorderSide(
-                              color: Colors.blueAccent,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Container(
-                            constraints: BoxConstraints(minWidth: 200),
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 16,
-                              children: [
-                                Icon(
-                                  Icons.library_add,
-                                  color: Colors.blueAccent,
-                                ),
-                                Text('Adicionar venda personalizada'),
-                              ],
-                            ),
-                          ),
-                        ),
+                        child: HomeCard(),
                       ),
                     ],
                   ),
@@ -124,58 +77,21 @@ class _HomePageState extends State<HomePage> {
                     spacing: 8,
                     children: [
                       Expanded(
-                        child: Card.outlined(
-                          margin: EdgeInsets.zero,
-                          color: Colors.blueAccent.withAlpha(30),
-                          shape: RoundedRectangleBorder(
-                            side: BorderSide(
-                              color: Colors.blueAccent,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Container(
-                            constraints: BoxConstraints(minWidth: 200),
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 16,
-                              children: [
-                                Icon(
-                                  Icons.library_add,
-                                  color: Colors.blueAccent,
-                                ),
-                                Text('Adicionar venda personalizada'),
-                              ],
-                            ),
-                          ),
-                        ),
+                        child: HomeCard(),
                       ),
                       Expanded(
-                        child: Card.outlined(
-                          margin: EdgeInsets.zero,
-                          color: Colors.blueAccent.withAlpha(30),
-                          shape: RoundedRectangleBorder(
-                            side: BorderSide(
-                              color: Colors.blueAccent,
-                            ),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Container(
-                            constraints: BoxConstraints(minWidth: 200),
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 16,
-                              children: [
-                                Icon(
-                                  Icons.library_add,
-                                  color: Colors.blueAccent,
-                                ),
-                                Text('Adicionar venda personalizada'),
-                              ],
-                            ),
-                          ),
-                        ),
+                        child: HomeCard(),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    spacing: 8,
+                    children: [
+                      Expanded(
+                        child: HomeCard(),
+                      ),
+                      Expanded(
+                        child: HomeCard(),
                       ),
                     ],
                   ),
@@ -197,7 +113,7 @@ class _HomePageState extends State<HomePage> {
               title: Text(
                 'Carrinho',
                 style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 18,
                   fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),
