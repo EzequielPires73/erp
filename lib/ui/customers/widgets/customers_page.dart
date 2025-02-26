@@ -1,3 +1,4 @@
+import 'package:erp/ui/customers/widgets/create_customer_page.dart';
 import 'package:erp/ui/customers/widgets/customer_card.dart';
 import 'package:erp/utils/colors.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +80,11 @@ class _CustomersPageState extends State<CustomersPage> {
                       Colors.blueAccent.withAlpha(30),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CreateCustomerPage(),
+                      )),
                   icon: Icon(Icons.add),
                 ),
                 const SizedBox(
